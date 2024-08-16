@@ -1,29 +1,89 @@
-# JupyterLite Demo
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
+# Introduction to Python language
 
-## ✨ Try it in your browser ✨
+This a repository to set up JupyterLite for the following repository: https://github.com/mrastgoo/python-introduction-jupyterlite
 
-➡️ **https://jupyterlite.github.io/demo**
+To launch JupyterLite, click on the following link: https://mrastgoo.github.io/python-introduction-jupyterlite/
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+
+We introduce here the Python language. 
+The material presented are in reference form [scipy-lecture-notes](http://www.scipy-lectures.org/intro/index.html). 
+To learn more about the language, consider going through the
+excellent tutorials on https://docs.python.org/tutorial and scipy-lectures. 
+
+Python is a **programming language**, as are C, Fortran, BASIC, PHP,
+etc. Some specific features of Python are as follows:
+
+* an *interpreted* (as opposed to *compiled*) language. Contrary to e.g.
+C or Fortran, one does not compile Python code before executing it. In
+addition, Python can be used **interactively**: many Python
+interpreters are available, from which commands and scripts can be
+executed.
+
+* a free software released under an **open-source** license: Python can
+be used and distributed free of charge, even for building commercial
+software.
+
+* **multi-platform**: Python is available for all major operating
+systems, Windows, Linux/Unix, MacOS X, most likely your mobile phone
+OS, etc.
+
+* a very readable language with clear non-verbose syntax
+
+* a language for which a large variety of high-quality packages are
+available for various applications, from web frameworks to scientific
+computing.
+
+* a language very easy to interface with other languages, in particular C
+and C++.
+
+* Some other features of the language are illustrated just below. For
+example, Python is an object-oriented language, with dynamic typing
+(the same variable can contain objects of different types during the
+course of a program).
+
+
+
+See https://www.python.org/about/ for more information about
+distinguishing features of Python.
+
+In this course we will try to cover:
+* basic types
+* control flow
+* functions
+* object-oriented programming
+* `if we have time` reusing-code
+
 
 ## Requirements
 
-JupyterLite is being tested against modern web browsers:
+Clone or save the zip folder of the git repository
+   
+```
+        git clone https://github.com/mrastgoo/introduction-to-python      
 
-- Firefox 90+
-- Chromium 89+
+```
 
-## Deploy your JupyterLite website on GitHub Pages
+By installing [Anaconda3](https://www.anaconda.com/download/#linux) or miniconda3 you should have all the necessary packages.
 
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
+Otherwise, make sure to have 
 
-## Further Information and Updates
-
-For more info, keep an eye on the JupyterLite documentation:
-
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
+    * jupyter lab
+    * jupyter notebook
+    * numpy 
+    * python 3.8
+  
+if you have anaconda or miniconda install 
+1. Create your own environment 
+   ```
+        conda create --name py_intro -y python=3.8
+   ```
+2. Install the necessary packages
+   ```
+        pip install -r requirements.txt
+   ```
+3. Add a new [ipython kernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) for your virtual env
+   ```
+        python -m ipykernel install --user --name py_intro --display-name py_intro
+   ```
