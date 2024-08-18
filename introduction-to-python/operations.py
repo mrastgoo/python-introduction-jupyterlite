@@ -20,5 +20,5 @@ def operation(*args):
     print('{} - {} is {}'.format(x, y, b))
 
 
-#if __name__ == '__main__':
-operation(sys.argv[1], sys.argv[2])
+if __name__ == '__main__':
+    operation(sys.argv[1], sys.argv[2])
