@@ -53,37 +53,4 @@ In this course we will try to cover:
 * control flow
 * functions
 * object-oriented programming
-* `if we have time` reusing-code
-
-
-## Requirements
-
-Clone or save the zip folder of the git repository
-   
-```
-        git clone https://github.com/mrastgoo/introduction-to-python      
-
-```
-
-By installing [Anaconda3](https://www.anaconda.com/download/#linux) or miniconda3 you should have all the necessary packages.
-
-Otherwise, make sure to have 
-
-    * jupyter lab
-    * jupyter notebook
-    * numpy 
-    * python 3.8
-  
-if you have anaconda or miniconda install 
-1. Create your own environment 
-   ```
-        conda create --name py_intro -y python=3.8
-   ```
-2. Install the necessary packages
-   ```
-        pip install -r requirements.txt
-   ```
-3. Add a new [ipython kernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) for your virtual env
-   ```
-        python -m ipykernel install --user --name py_intro --display-name py_intro
-   ```
+* *if we have time* reusing-code
